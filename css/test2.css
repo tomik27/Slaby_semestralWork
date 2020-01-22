@@ -1,0 +1,170 @@
+body,html{
+  height: 100%;
+  margin: 0;
+}
+body{
+  font-size: 16px;
+  color: #4a4a4a;
+
+}
+header {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  padding: 5px;
+  height: 46px;
+  background-color:white;
+  border-bottom:5px  solid red;
+}
+
+header nav a {
+  display: inline-block;
+  color: black;
+  text-align: left;
+  padding: 8px 12px;
+  margin: 0px 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  background: red;
+  transition: 1s;
+  border: 2px red solid;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+#hero {
+  height: 100%;
+  background: url("film.jpg") no-repeat center;
+  background-color: #4a4a4a;
+  font-size: larger;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+#hero_text{
+  color:red;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.full-width-wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.margin_top {
+  margin: 100px auto 100px auto;
+}
+
+
+form .stars {
+  background: url("stars.png") repeat-x 0 0;
+  width: 150px;
+  margin: 0 auto;
+}
+
+form .stars input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+form .stars input[type="radio"].star-5:checked ~ span {
+  width: 100%;
+}
+form .stars input[type="radio"].star-4:checked ~ span {
+  width: 80%;
+}
+form .stars input[type="radio"].star-3:checked ~ span {
+  width: 60%;
+}
+form .stars input[type="radio"].star-2:checked ~ span {
+  width: 40%;
+}
+form .stars input[type="radio"].star-1:checked ~ span {
+  width: 20%;
+}
+form .stars label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0!important;
+  padding: 0!important;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form .stars label:hover ~ span {
+  background-position: 0 -30px;
+}
+form .stars label.star-5:hover ~ span {
+  width: 100% !important;
+}
+form .stars label.star-4:hover ~ span {
+  width: 80% !important;
+}
+form .stars label.star-3:hover ~ span {
+  width: 60% !important;
+}
+form .stars label.star-2:hover ~ span {
+  width: 40% !important;
+}
+form .stars label.star-1:hover ~ span {
+  width: 20% !important;
+}
+form .stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  background: url("stars.png") repeat-x 0 -60px;
+  -webkit-transition: -webkit-width 0.5s;
+  -moz-transition: -moz-width 0.5s;
+  -ms-transition: -ms-width 0.5s;
+  -o-transition: -o-width 0.5s;
+  transition: width 0.5s;
+}
+
+table {
+
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: red;
+  color: white;
+}
+
+.obrazek_film{
+background-color: #e8e8e8;
+border-top: 12px solid #c5091a;
+padding: 10px;
+width: 700px;
+margin-bottom: 10px;
+height: 180px;
+}
+
